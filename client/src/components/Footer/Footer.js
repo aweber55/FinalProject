@@ -4,11 +4,11 @@ const Footer = () => (
   <footer>
     <hr />
     <p className="pull-right footbase">
-    <i className="fas fa-utensils" aria-hidden="true" />  Powered by Reactjs  <i class="fas fa-beer" />
+    <i className="fas fa-utensils" aria-hidden="true" />  Powered by Reactjs  <i className="fas fa-beer" />
     
-    <p> Punk Api and Food2Fork </p>
+    {/* <p> Punk Api and Food2Fork </p> */}
     </p>
-   
+    <p> Punk Api and Food2Fork </p>
   </footer>
 );
 
