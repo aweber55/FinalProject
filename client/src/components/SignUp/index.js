@@ -1,5 +1,5 @@
 import React from 'react';
-import "./signStyle.css";
+import "./signUp.css";
 import {Link} from 'react-router-dom';
 import Jumbotron from "../Jumbotron/";
 
