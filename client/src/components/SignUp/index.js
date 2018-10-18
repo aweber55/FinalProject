@@ -5,10 +5,14 @@ import Jumbotron from "../Jumbotron/";
 
 const SignUp = (props)=> {
 	return (
+		<div className="signUp">
+		{/* <Container> */}
+			<Jumbotron />
 		<div id="signUp">
-		<Jumbotron />
+		{/* <Jumbotron /> */}
 			<h1>SIGN UP</h1>
 			<Link to = "/" >Go to sign in</Link>
+			
 			<form>
 				<label>Email</label><br/>
 				<input value = {props.username} onChange = {props.handleChange} name='username' type='email' placeholder = 'example@email.com'/>
@@ -18,6 +22,8 @@ const SignUp = (props)=> {
 				<br />
 				<button type = 'submit' name = "/auth/signup" onClick = {props.handleSubmit}>Sign Up</button>
 			</form>
+		</div>
+		{/* </Container> */}
 		</div>
 	);
 };
