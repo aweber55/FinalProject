@@ -17,8 +17,8 @@ const Home = (props) =>{
 		<div className="col-4 center-block" id="signIn">
 		{/* <div className="home" > */}
 			{/* <h1>You should only see this if you are logged in!</h1> */}
-			<h2>Welcome to the Best Craft Beer and Food Pairing App!</h2>
-			<h2>{props.auth.username}</h2>
+			<h2 className="letters">Welcome to the Best Craft Beer and Food Pairing App!</h2>
+			<h2 className="letters">{props.auth.username}</h2>
 			<button  className="btnSign" onClick = {props.handleLogout}>Log Out</button>
 			<Link to = "/Main" >
 			<button  className="btnSign" type="button">Lets get Started</button>
