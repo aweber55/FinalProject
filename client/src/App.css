@@ -36,10 +36,19 @@
   border-radius: 30%;
   border: silver solid 5px;
   height: 245px;
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 } */
 .jumbotron {
   background: url("../src/images/food_paring.jpg") center;
-    background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    /* background-size: contain; */
     margin: auto;
     margin-top: 30px;
     margin-bottom: 20px;
