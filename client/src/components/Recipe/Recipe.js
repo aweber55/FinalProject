@@ -5,7 +5,7 @@ import { ListItem } from "../List";
 const Recipe = ({ title, source_url, recipes, _id,  handleClick, buttonText, saved }) => (
   <ListItem>
     <h3>
-      <em>{title}</em>{" "}
+      <em id="titleWord">{title}</em>{" "}
       <span className="btn-group pull-right">
         <a
           value={title}
@@ -14,6 +14,7 @@ const Recipe = ({ title, source_url, recipes, _id,  handleClick, buttonText, sav
           href={source_url}
           rel="noopener noreferrer"
           target="_blank"
+          id="href"
         >
           View Recipe
         </a>

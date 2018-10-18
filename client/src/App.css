@@ -316,4 +316,14 @@ body {
   border-top-color: #1b435e;
   background: #1b435e;
   }
-  
+  #href {
+    
+    font-family: 'Nunito', sans-serif;
+    margin: auto, 0;
+    
+  }
+
+  #titleWord {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+  }
