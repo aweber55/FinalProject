@@ -16,11 +16,12 @@ const Home = (props) =>{
 		<div className="container home">
 		<div className="col-4 center-block" id="signIn">
 		{/* <div className="home" > */}
-			<h1>You should only see this if you are logged in!</h1>
-			<p>{props.auth.username}</p>
-			<button  id="logout" onClick = {props.handleLogout}>Log Out</button>
+			{/* <h1>You should only see this if you are logged in!</h1> */}
+			<h2>Welcome to the Best Craft Beer and Food Pairing App!</h2>
+			<h2>{props.auth.username}</h2>
+			<button  className="btnSign" onClick = {props.handleLogout}>Log Out</button>
 			<Link to = "/Main" >
-			<button  id="started" type="button">Lets get Started</button>
+			<button  className="btnSign" type="button">Lets get Started</button>
 	 		</Link>
 			</div>
 			</div>

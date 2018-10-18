@@ -25,7 +25,7 @@ const SearchForm = props => (
       <button
         type="submit"
         onClick={props.handleFormSubmit}
-        className="btn btn-tw btn-outline-info waves-effect butnSubm"
+        className=" butnSubm btnSign"
       >
         Search
       </button>

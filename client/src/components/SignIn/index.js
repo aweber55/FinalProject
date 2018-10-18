@@ -25,7 +25,7 @@ const SignIn = (props)=> {
 				<label>Password</label><br/>
 				<input name='password' type='password' value = {props.password} onChange = {props.handleChange} />
 				<br />
-				<button  id="btnSign" type = 'submit' name = "/auth/signin" onClick = {props.handleSubmit}>Sign In</button>
+				<button  className="btnSign" type = 'submit' name = "/auth/signin" onClick = {props.handleSubmit}>Sign In</button>
 			</form>
 		</div>
 		</Col>

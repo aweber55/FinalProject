@@ -20,7 +20,7 @@ const SignUp = (props)=> {
 				<label>Password</label><br/>
 				<input name='password' type='password' value = {props.password} onChange = {props.handleChange} />
 				<br />
-				<button type = 'submit' name = "/auth/signup" onClick = {props.handleSubmit}>Sign Up</button>
+				<button className="btnSign" type = 'submit' name = "/auth/signup" onClick = {props.handleSubmit}>Sign Up</button>
 			</form>
 		</div>
 		{/* </Container> */}
