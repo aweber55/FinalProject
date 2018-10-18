@@ -25,7 +25,7 @@ const Home = (props) =>{
 	 		</Link>
 			</div>
 			</div>
-			{/* </div> */}
+			
 			</Col>
 			</Row>
 		
