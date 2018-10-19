@@ -159,6 +159,16 @@ align-content: flex-end;
   min-width: 300px;
   text-align: center;
 }
+.card-save {
+  max-width: 900px;
+  min-width: 300px;
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 10%;
+  margin-right: -10%;
+
+}
+
 .form-group {
   display: block;
   text-align: center;

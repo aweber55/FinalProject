@@ -34,7 +34,8 @@ export default {
       },
       getSavedRecipes: function() {
         return axios.get("/api/recipes"); 
-      }
+      },
+     
 };
 
 

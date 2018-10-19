@@ -9,7 +9,7 @@ const RecipeSave = ({ title, source_url, recipes, _id,  handleClick, buttonText,
       <span className="btn-group pull-right">
         <a
           value={title}
-          onClick={() => handleClick(title)}
+          // onClick={() => handleClick(title)}
           className="btn btn-light"
           href={source_url}
           rel="noopener noreferrer"
@@ -18,9 +18,7 @@ const RecipeSave = ({ title, source_url, recipes, _id,  handleClick, buttonText,
         >
           View Recipe
         </a>
-        {/* <button onClick={() => handleClick(title)} className="btn btn-primary btnSign">Save this
-          {buttonText}
-        </button> */}
+       
       </span>
     </h3>
    

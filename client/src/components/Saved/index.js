@@ -4,10 +4,10 @@ import Jumbotron from "../Jumbotron";
 import API from "../../utils/API";
 import {Col, Container, Row} from "../Grid";
 // import SearchForm from "../SearchForm/SearchForm";
-import Card from "../../components/Card";
+// import Card from "../../components/Card";
 import { List } from "../../components/List";
 // import Recipe from "../../components/Recipe";
-
+import CardSave from "../../components/CardSave";
 import Nav from "../Nav";
 import RecipeSave from "../../components/RecipeSave";
 
@@ -67,8 +67,8 @@ class Saved extends React.Component {
                
        
 <Row>
-<Col size="col-4">
-<Card title="Recipes" >
+<Col size="col-12">
+<CardSave title="Saved Recipes" >
           {this.state.recipes.length ? (
             <List >
               {this.state.recipes.map((recipe, index) => (
@@ -92,7 +92,7 @@ class Saved extends React.Component {
           ) : (
             <h2 className="text-center">{this.state.message}</h2>
           )}
-        </Card>
+        </CardSave>
 
 </Col>
 

@@ -18,7 +18,10 @@ const Recipe = ({ title, source_url, recipes, _id,  handleClick, buttonText, sav
         >
           View Recipe
         </a>
-        <button onClick={() => handleClick(title)} className="btn btn-primary btnSign">Save this
+        {/* <button onClick={() => handleClick(title)} className="btn btn-primary btnSign">Save this
+          {buttonText}
+        </button> */}
+        <button className="btn btn-primary btnSign">Save this
           {buttonText}
         </button>
       </span>
