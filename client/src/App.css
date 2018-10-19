@@ -276,9 +276,9 @@ body {
 
   .footbase {
   width:100%;
-  height:48px;
+  height:31px;
   /* padding-top:11px; */
-  background:rgb(214, 210, 210);
+  /* background:rgb(214, 210, 210); */
   color:white;
   font-weight: bold;
   /* font-size:24px; */
@@ -341,3 +341,19 @@ body {
   .recipeSave {
     width: 80%;
   }
+
+  /* a:link {
+    color: white;
+  }
+  a:visited {
+    color: white;
+  }
+  a:active {
+    color: white;
+  }
+  a:hover{
+    color: white;
+    text-decoration: underline;
+    
+
+  } */

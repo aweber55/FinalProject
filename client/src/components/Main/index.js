@@ -98,7 +98,7 @@ class Main extends React.Component {
         
         API.getFood(this.state.search)
         .then(res => {
-            
+            this.setState({ search: ""});
             // let {foodArray} = this.state;
             //     this.state.foodArray.push(res.data);
                 
@@ -134,15 +134,15 @@ class Main extends React.Component {
                 let {beer} = this.state;
                 
                 this.state.beer.push(res.data);
-                this.setState({ beerName: res.data[0].name,
-                beerId: res.data[0].id,
-                beerPair: res.data[0].food_pairing,
-                 beerDesc: res.data[0].description,
-                 beerTips: res.data[0].brewers_tips,
-                 beerImg: res.data[0].image_url,
-                 beerDate: res.data[0].first_brewed,
-                 beerTagline: res.data[0].tagline,
-                 beerAbv: res.data[0].abv
+                this.setState({ beerName: res.data[1].name,
+                beerId: res.data[1].id,
+                beerPair: res.data[1].food_pairing,
+                 beerDesc: res.data[1].description,
+                 beerTips: res.data[1].brewers_tips,
+                 beerImg: res.data[1].image_url,
+                 beerDate: res.data[1].first_brewed,
+                 beerTagline: res.data[1].tagline,
+                 beerAbv: res.data[1].abv
                 })  
                 
                 this.setState({ beer: res.data});
@@ -166,7 +166,7 @@ class Main extends React.Component {
                     this.getFood();
                     this.getBeer();
                     this.setState({ search: ""});
-                    
+                    console.log(this.state.search);
                 }
                         
 
@@ -238,7 +238,7 @@ class Main extends React.Component {
            <Collapsible  transitionTime={500} easing={'cubic-bezier(0.175, 0.885, 0.32, 2.275)'} trigger="Some tips from the brewer">
         <p className="P5">{this.state.beerTips}</p>
         <div>
-        <button onClick={this.onOpenModal}>Some of the finer points</button>
+        <button id="modalBtn" onClick={this.onOpenModal}>Some of the finer points</button>
         <Modal  open={open} onClose={this.onCloseModal} center>
          
 
@@ -246,7 +246,7 @@ class Main extends React.Component {
                          ---------------------------------------
           <h3 className="Mwords">Date it was first brewed:  {this.state.beerDate}</h3> 
           ---------------------------------------------------------------------------
-          <h3 className="Mwords">This beers ABV:  {this.state.beerAbv}</h3>
+          <h3 className="Mwords">The ABV (Alcohol by volume) for this beer:  {this.state.beerAbv}</h3>
           ---------------------------------------------------------------------------
           <h3 className="Mwords">The famous Tagline:  {this.state.beerTagline}</h3>
         </Modal>
