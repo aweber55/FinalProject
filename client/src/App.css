@@ -195,8 +195,8 @@ align-content: flex-end;
   font-family: 'Nunito', sans-serif;
 }
 .search {
-  background:silver;
-  padding: 2px;
+  background:rgb(237, 247, 230);
+  padding: 20px;
   margin: 2px;
 }
 /* .center-block {
@@ -342,7 +342,7 @@ body {
   background: #1b435e;
   }
   #href {
-    
+    margin-top: 7px;
     font-family: 'Nunito', sans-serif;
     margin: auto, 0;
     

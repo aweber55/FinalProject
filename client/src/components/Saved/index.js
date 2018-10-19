@@ -10,7 +10,7 @@ import { List } from "../../components/List";
 import CardSave from "../../components/CardSave";
 import Nav from "../Nav";
 import RecipeSave from "../../components/RecipeSave";
-
+import Footer from "../../components/Footer";
 
 class Saved extends React.Component {
     state = {
@@ -99,7 +99,7 @@ class Saved extends React.Component {
 
 </Row>
 
-{/* </div> */}
+<Footer />
 </Container>
 
 );
