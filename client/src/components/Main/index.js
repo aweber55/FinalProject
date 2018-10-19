@@ -166,7 +166,7 @@ class Main extends React.Component {
                     this.getFood();
                     this.getBeer();
                     this.setState({ search: ""});
-                    console.log(this.state.search);
+                    
                 }
                         
 
@@ -228,7 +228,7 @@ class Main extends React.Component {
       <Collapsible id="collapsible"  transitionTime={500} easing={'cubic-bezier(0.175, 0.885, 0.32, 2.275)'} trigger="Check out BrewDog's recipe suggestions">
         <p className="P5">{ this.state.beerPair.map((beerPair, index) => {
           let url = "https://www.google.com/search?q=" + beerPair;
-        return <a href={url}  target="_blank" rel="noopener noreferrer" key={index} ><li  key={index} id={beerPair.beerPair_id} > {beerPair} </li></a>})}</p>
+        return <a href={url} id="whiteText" target="_blank" rel="noopener noreferrer" key={index} ><li  key={index} id={beerPair.beerPair_id} > {beerPair} </li></a>})}</p>
         
         </Collapsible>
         <Collapsible  transitionTime={500} easing={'cubic-bezier(0.175, 0.885, 0.32, 2.275)'} trigger="Mmmmm, A nice description">
