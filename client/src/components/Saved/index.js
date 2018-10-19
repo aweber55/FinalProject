@@ -68,6 +68,7 @@ class Saved extends React.Component {
        
 <Row>
 <Col size="col-12">
+<div className="SavedR">
 <CardSave title="Saved Recipes" >
           {this.state.recipes.length ? (
             <List >
@@ -93,7 +94,7 @@ class Saved extends React.Component {
             <h2 className="text-center">{this.state.message}</h2>
           )}
         </CardSave>
-
+        </div>
 </Col>
 
 
