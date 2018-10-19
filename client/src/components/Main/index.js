@@ -242,7 +242,7 @@ class Main extends React.Component {
         <Modal  open={open} onClose={this.onCloseModal} center>
          
 
-          <h3 className="Mwords">   Some of the fine print  </h3>
+          <h3 className="Mwords">   Some of the fine print:  </h3>
                          ---------------------------------------
           <h3 className="Mwords">Date it was first brewed:  {this.state.beerDate}</h3> 
           ---------------------------------------------------------------------------
