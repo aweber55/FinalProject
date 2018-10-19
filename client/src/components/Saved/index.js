@@ -6,9 +6,10 @@ import {Col, Container, Row} from "../Grid";
 // import SearchForm from "../SearchForm/SearchForm";
 import Card from "../../components/Card";
 import { List } from "../../components/List";
-import Recipe from "../../components/Recipe";
-import {Link} from 'react-router-dom';
+// import Recipe from "../../components/Recipe";
+
 import Nav from "../Nav";
+import RecipeSave from "../../components/RecipeSave";
 
 
 class Saved extends React.Component {
@@ -70,9 +71,9 @@ class Saved extends React.Component {
 <Card title="Recipes" >
           {this.state.recipes.length ? (
             <List >
-              {this.state.recipes.map(recipe => (
-                <Recipe
-                  key={recipe.recipe_id}
+              {this.state.recipes.map((recipe, index) => (
+                <RecipeSave 
+                  key={index}
                   _id={recipe.recipe_id}
                   title={recipe.title}
                   source_url={recipe.source_url}
@@ -97,7 +98,7 @@ class Saved extends React.Component {
 
 
 </Row>
-<Link to="/Main">Go Back to Searching</Link>
+
 {/* </div> */}
 </Container>
 

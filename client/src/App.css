@@ -327,3 +327,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
   }
+
+  .recipeSave {
+    width: 80%;
+  }
