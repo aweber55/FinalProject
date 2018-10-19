@@ -226,7 +226,9 @@ class Main extends React.Component {
 <div className="displayImage">
 <div className="col-sm-12 smaller">
       <Collapsible id="collapsible"  transitionTime={500} easing={'cubic-bezier(0.175, 0.885, 0.32, 2.275)'} trigger="Check out BrewDog's recipe suggestions">
-        <p className="P5">{ this.state.beerPair.map((beerPair, index) => <a href="https://www.google.com/search?q="  key={index} ><li onClick={this.beerLink} key={index} id={beerPair.beerPair_id} > {beerPair} </li></a>)}</p>
+        <p className="P5">{ this.state.beerPair.map((beerPair, index) => {
+          let url = "https://www.google.com/search?q=" + beerPair;
+        return <a href={url}  target="_blank" rel="noopener noreferrer" key={index} ><li  key={index} id={beerPair.beerPair_id} > {beerPair} </li></a>})}</p>
         
         </Collapsible>
         <Collapsible  transitionTime={500} easing={'cubic-bezier(0.175, 0.885, 0.32, 2.275)'} trigger="Mmmmm, A nice description">
