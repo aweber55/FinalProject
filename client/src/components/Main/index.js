@@ -134,15 +134,15 @@ class Main extends React.Component {
                 let {beer} = this.state;
                 
                 this.state.beer.push(res.data);
-                this.setState({ beerName: res.data[1].name,
-                beerId: res.data[1].id,
-                beerPair: res.data[1].food_pairing,
-                 beerDesc: res.data[1].description,
-                 beerTips: res.data[1].brewers_tips,
-                 beerImg: res.data[1].image_url,
-                 beerDate: res.data[1].first_brewed,
-                 beerTagline: res.data[1].tagline,
-                 beerAbv: res.data[1].abv
+                this.setState({ beerName: res.data[0].name,
+                beerId: res.data[0].id,
+                beerPair: res.data[0].food_pairing,
+                 beerDesc: res.data[0].description,
+                 beerTips: res.data[0].brewers_tips,
+                 beerImg: res.data[0].image_url,
+                 beerDate: res.data[0].first_brewed,
+                 beerTagline: res.data[0].tagline,
+                 beerAbv: res.data[0].abv
                 })  
                 
                 this.setState({ beer: res.data});
